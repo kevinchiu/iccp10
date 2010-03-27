@@ -564,3 +564,56 @@ Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/refresh/get/8227843
 Processing RefreshController#get (for 127.0.0.1 at 2010-03-27 13:13:32) [GET]
   Parameters: {"id"=>"58287527179"}
 Completed in 20ms (View: 18, DB: 0) | 200 OK [http://localhost/refresh/get/58287527179]
+DEPRECATION WARNING: require "active_support/core_ext/blank" is deprecated and will be removed in Rails 3. Use require "active_support/core_ext/object/blank" instead.. (called from /Users/kevin/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/blank.rb:2)
+
+
+Processing RefreshController#get (for 127.0.0.1 at 2010-03-27 14:10:44) [GET]
+  Parameters: {"id"=>"964344894979"}
+
+NoMethodError (undefined method `url' for nil:NilClass):
+  app/controllers/refresh_controller.rb:19:in `photo_to_hash'
+  app/controllers/refresh_controller.rb:28:in `photo_hash_array'
+  app/controllers/refresh_controller.rb:28:in `collect'
+  app/controllers/refresh_controller.rb:28:in `photo_hash_array'
+  app/controllers/refresh_controller.rb:8:in `get'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (35.4ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+DEPRECATION WARNING: require "active_support/core_ext/blank" is deprecated and will be removed in Rails 3. Use require "active_support/core_ext/object/blank" instead.. (called from /Users/kevin/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/blank.rb:2)
+
+
+Processing RefreshController#get (for 127.0.0.1 at 2010-03-27 14:15:20) [GET]
+  Parameters: {"id"=>"336284005316"}
+
+TypeError (can't convert Array into String):
+  app/controllers/refresh_controller.rb:8:in `get'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (104.9ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RefreshController#get (for 127.0.0.1 at 2010-03-27 14:16:16) [GET]
+  Parameters: {"id"=>"324646091787"}
+Completed in 8610ms (View: 1, DB: 0) | 200 OK [http://localhost/refresh/get/324646091787]

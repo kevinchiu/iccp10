@@ -16,16 +16,15 @@ class RefreshController < ApplicationController
     {
       :src_s => photo.small.url,
       :src_m => photo.medium.url,
-      :src_l => photo.large.url,
+      :src_l => photo.original.url,
       :title => photo.title,
       :url => photo.url
     }
   end
   
   def photo_hash_array
-    photo_data = []
     photos = Fleakr.search('iccp10')
-    photos.collect{|p| photo_to_hash(p) }
+    photos.collect{|p| photo_to_hash(p)}.to_json
   end
   
   '[{
