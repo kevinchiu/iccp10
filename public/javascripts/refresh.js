@@ -7,10 +7,10 @@ function checkFreshness () {
 
 function jsonFlickrApi(o) {
 	if(first){
-		baseline = o.toString()
+		baseline = o.photos.photo[0].dateupload
 		first = false
 	}else{
-		current = o.toString()
+		current = o.photos.photo[0].dateupload
 		if (current != baseline) {
 			rand_60 = Math.floor(Math.random()*61)
 			setTimeout("window.location=window.location", rand_60*100)
