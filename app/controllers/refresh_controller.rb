@@ -23,7 +23,7 @@ class RefreshController < ApplicationController
   end
   
   def photo_hash_array
-    photos = Fleakr.search('iccp10')
+    photos = Fleakr.search('iccp10 OR iccp2010')
     photos.collect{|p| photo_to_hash(p)}.to_json
   end
   
