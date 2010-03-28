@@ -1,4 +1,4 @@
-var kevin_server = "http://iccp10.heroku.com/"
+var kevin_server = "http://iccp10.com/"
 
 var flickrshows = [],
 flickrshow = function(t, s) {
