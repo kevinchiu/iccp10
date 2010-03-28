@@ -7,13 +7,13 @@ function checkFreshness () {
 
 function jsonFlickrApi(o) {
 	if(first){
-		baseline = o.toSource()
+		baseline = o.toString()
 		first = false
 	}else{
-		current = o.toSource()
+		current = o.toString()
 		if (current != baseline) {
 			rand_60 = Math.floor(Math.random()*61)
-			setTimeout("window.location=window.location", rand_60*1000)
+			setTimeout("window.location=window.location", rand_60*100)
 		}		
 	}
 }
