@@ -27,7 +27,7 @@ class RefreshController < ApplicationController
     tags = params[:tags]
     per_page = params[:per_page]
     require 'xmlsimple'
-    url = "http://www.flickr.com/services/rest/?method=flickr.photos.search&format=rest&api_key=739e578b0095d2ce5978331ac7466bd4&tags=#{tags}&per_page=#{per_page}0&extras=url_o,url_s,url_m,date_upload"
+    url = "http://www.flickr.com/services/rest/?method=flickr.photos.search&format=rest&api_key=739e578b0095d2ce5978331ac7466bd4&tags=#{tags}&per_page=#{per_page}&extras=url_o,url_s,url_m,date_upload"
     xml_data = Net::HTTP.get_response(URI.parse(url)).body
     data = XmlSimple.xml_in(xml_data)
     data['photos'][0]['photo'].sort{|x,y| y["dateupload".to_i] <=> x["dateupload"].to_i}
