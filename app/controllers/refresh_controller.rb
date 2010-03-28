@@ -20,11 +20,12 @@ class RefreshController < ApplicationController
   end
   
   def photo_hash_array
-    flickr_search.shuffle.map{|p| photo_to_hash(p)}.to_json
+    flickr_search.map{|p| photo_to_hash(p)}.to_json
   end
   
   def flickr_search
-    per_page = params[:per_page]
+    # per_page = params[:per_page]
+    per_page = 5
     require 'xmlsimple'
     url = "http://www.flickr.com/services/rest/?method=flickr.people.getPublicPhotos&api_key=739e578b0095d2ce5978331ac7466bd4&user_id=48727269@N07&extras=url_o,url_s,url_m,url_l,date_upload"
     xml_data = Net::HTTP.get_response(URI.parse(url)).body
