@@ -18,6 +18,6 @@ function jsonFlickrApi(o) {
 }
 
 first = true
-url = 'http://www.flickr.com/services/rest/?method=flickr.photos.search&format=json&api_key=739e578b0095d2ce5978331ac7466bd4&user_id=48727269@N07&per_page=40&extras=url_o'
+url = "http://www.flickr.com/services/rest/?method=flickr.photos.search&format=json&api_key=739e578b0095d2ce5978331ac7466bd4&tags=iccp10,iccp2010&per_page=30"
 
 setInterval("checkFreshness();", 600000)

@@ -1,7 +1,4 @@
 class RefreshController < ApplicationController
-  require 'fleakr'
-  Fleakr.api_key = '739e578b0095d2ce5978331ac7466bd4'
-  
   def get
     id = params[:id]
     
@@ -12,19 +9,26 @@ class RefreshController < ApplicationController
   
   protected
   
-  def photo_to_hash(photo)
+  def photo_to_hash(p)
     {
-      :src_s => photo.small.url,
-      :src_m => photo.medium.url,
-      :src_l => photo.original.url,
-      :title => photo.title,
-      :url => photo.url
+      :src_s => p['url_o'],
+      :src_m => p['url_o'],
+      :src_l => p['url_o'],
+      :title => p['title'],
+      :url => 'http://www.flickr.com/photos/' + p['owner'] + '/' + p['id']
     }
   end
   
   def photo_hash_array
-    photos = Fleakr.search('iccp10 OR iccp2010')
-    photos.collect{|p| photo_to_hash(p)}.to_json
+    flickr_search.map{|p| photo_to_hash(p)}.to_json
+  end
+  
+  def flickr_search
+    require 'xmlsimple'
+    url = 'http://www.flickr.com/services/rest/?method=flickr.photos.search&format=rest&api_key=739e578b0095d2ce5978331ac7466bd4&tags=iccp10,iccp2010&per_page=30&extras=url_o'
+    xml_data = Net::HTTP.get_response(URI.parse(url)).body
+    data = XmlSimple.xml_in(xml_data)
+    data['photos'][0]['photo']
   end
   
   '[{
