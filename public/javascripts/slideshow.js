@@ -1,5 +1,5 @@
 kevin_server = "http://iccp10.com/"
-// kevin_server = "http://localhost:3000/"
+kevin_server = "http://localhost:3000/"
 var myslideshows = [],
 myslideshow = function(t, s) {
     var _ = this;
