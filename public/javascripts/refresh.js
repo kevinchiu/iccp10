@@ -13,7 +13,7 @@ function jsonFlickrApi(o) {
 		current = o.toSource()
 		if (current != baseline) {
 			rand_5 = Math.floor(Math.random()*6)
-			setTimeout("window.location=window.location", rand_5*1000)
+			setTimeout("window.location=window.location", rand_5*10000)
 		}		
 	}
 }
