@@ -1,3 +1,13 @@
+class Array
+  def shuffle
+    sort_by { rand }
+  end
+  
+  end shuffle!
+    replace shuffle
+  end
+end
+
 class RefreshController < ApplicationController
   def get
     id = params[:id]
