@@ -5,7 +5,7 @@ class RefreshController < ApplicationController
   def get
     id = params[:id]
     
-    response = 'flickrshows[' + id + '] = ' + photo_hash_array
+    response = 'myslideshows[' + id + '] = ' + photo_hash_array
     
     render({:content_type => :js, :text => response})    
   end

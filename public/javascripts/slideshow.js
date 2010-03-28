@@ -1,7 +1,7 @@
-var kevin_server = "http://iccp10.com/"
+var kevin_server = "http://localhost:3000/"
 
-var flickrshows = [],
-flickrshow = function(t, s) {
+var myslideshows = [],
+myslideshow = function(t, s) {
     var _ = this;
     _.z = function(e, a, j, s, x) {
         if ('undefined' !== typeof _.t.q[x]) clearInterval(_.t.q[x]);
@@ -45,7 +45,7 @@ flickrshow = function(t, s) {
     _.b = function() {
         var i = _.y.i.childNodes[_.t.a].childNodes[0];
         if ('undefined' === typeof i) return;
-        _.y.b.childNodes[3].innerHTML = (_.t.a + 1) + '/' + _.t.w + ' - ' + i.getAttribute('flickrshow-t');
+        _.y.b.childNodes[3].innerHTML = (_.t.a + 1) + '/' + _.t.w + ' - ' + i.getAttribute('myslideshow-t');
     };
     _.n = function() {
         var li,
@@ -106,27 +106,27 @@ flickrshow = function(t, s) {
         }
     };
     _.e = function() {
-        if ('object' !== typeof flickrshows[_.t.d]) return;
+        if ('object' !== typeof myslideshows[_.t.d]) return;
         clearInterval(_.t.q['json']);
-        if ('undefined' !== typeof flickrshows[_.t.d]['error']) {
-            _.y.w.innerHTML = '<p style="color:#A00;font:normal normal 400 12px/18px helvetica,arial,sans-serif;left:0;margin:0;padding:0;posiiton:absolute;text-align:center;top:0;width:100%">' + flickrshows[_.t.d]['error'] + '</p>';
+        if ('undefined' !== typeof myslideshows[_.t.d]['error']) {
+            _.y.w.innerHTML = '<p style="color:#A00;font:normal normal 400 12px/18px helvetica,arial,sans-serif;left:0;margin:0;padding:0;posiiton:absolute;text-align:center;top:0;width:100%">' + myslideshows[_.t.d]['error'] + '</p>';
         } else {
-            _.t.w = flickrshows[_.t.d].length;
-            for (var i in flickrshows[_.t.d]) {
+            _.t.w = myslideshows[_.t.d].length;
+            for (var i in myslideshows[_.t.d]) {
                 var im = document.createElement('img');
-                im.setAttribute('flickrshow-t', flickrshows[_.t.d][i].title);
-                im.setAttribute('flickrshow-u', flickrshows[_.t.d][i].url);
+                im.setAttribute('myslideshow-t', myslideshows[_.t.d][i].title);
+                im.setAttribute('myslideshow-u', myslideshows[_.t.d][i].url);
                 im.setAttribute('rel', i);
                 im.style.cursor = 'pointer';
                 im.style.display = 'block';
                 im.style.margin = '0';
                 im.style.padding = '0';
                 if ((_.y.t.offsetHeight > 500) || (_.y.t.offsetWidth > 500)) {
-                    im.src = flickrshows[_.t.d][i].src_l + '?' + _.t.d;
+                    im.src = myslideshows[_.t.d][i].src_l + '?' + _.t.d;
                 } else if ((_.y.t.offsetHeight < 240) || (_.y.t.offsetWidth < 240)) {
-                    im.src = flickrshows[_.t.d][i].src_s + '?' + _.t.d;
+                    im.src = myslideshows[_.t.d][i].src_s + '?' + _.t.d;
                 } else {
-                    im.src = flickrshows[_.t.d][i].src_m + '?' + _.t.d;
+                    im.src = myslideshows[_.t.d][i].src_m + '?' + _.t.d;
                 }
                 var li = document.createElement('li');
                 li.style.left = (i * _.y.t.offsetWidth) + 'px';
@@ -141,7 +141,7 @@ flickrshow = function(t, s) {
                 _.y.i.appendChild(li);
                 _.x(im, 'click',
                 function(e, i) {
-                    document.location.href = (('undefined' !== typeof i) ? i: e.target).getAttribute('flickrshow-u');
+                    document.location.href = (('undefined' !== typeof i) ? i: e.target).getAttribute('myslideshow-u');
                 });
                 _.x(im, 'load',
                 function(e, i) {
