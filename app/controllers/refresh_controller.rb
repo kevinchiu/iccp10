@@ -1,12 +1,4 @@
-class Array
-  def shuffle
-    sort_by { rand }
-  end
-  
-  end shuffle!
-    replace shuffle
-  end
-end
+
 
 class RefreshController < ApplicationController
   def get
@@ -30,7 +22,7 @@ class RefreshController < ApplicationController
   end
   
   def photo_hash_array
-    flickr_search.shuffle.map{|p| photo_to_hash(p)}.to_json
+    flickr_search.sort_by{rand}.map{|p| photo_to_hash(p)}.to_json
   end
   
   def flickr_search
