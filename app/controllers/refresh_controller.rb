@@ -33,6 +33,6 @@ class RefreshController < ApplicationController
     # url = "http://www.flickr.com/services/rest/?method=flickr.photos.search&format=rest&api_key=739e578b0095d2ce5978331ac7466bd4&tags=#{tags}&per_page=#{per_page}&extras=url_o,url_s,url_m,url_l,date_upload"
     xml_data = Net::HTTP.get_response(URI.parse(url)).body
     data = XmlSimple.xml_in(xml_data)
-    data['photos'][0]['photo'].sort{|x,y| y["dateupload"].to_i <=> x["dateupload"].to_i}.shuffle
+    data['photos'][0]['photo'].sort{|x,y| y["dateupload"].to_i <=> x["dateupload"].to_i}
   end
 end
