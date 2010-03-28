@@ -21,4 +21,4 @@ function jsonFlickrApi(o) {
 first = true
 
 
-setInterval("checkFreshness();", 10000)
+setInterval("checkFreshness();", 100000)
