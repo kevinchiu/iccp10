@@ -1,4 +1,4 @@
-var kevin_server = "http://iccp10.com/"
+var kevin_server = "http://www.iccp10.com/"
 
 var myslideshows = [],
 myslideshow = function(t, s) {
