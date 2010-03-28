@@ -11,8 +11,8 @@ function jsonFlickrApi(o) {
 	}else{
 		current = o.toSource()
 		if (current != baseline) {
-			rand_30 = Math.floor(Math.random()*31)
-			setTimeout("window.location=window.location", (rand_30+10)*1000)
+			rand_5 = Math.floor(Math.random()*6)
+			setTimeout("window.location=window.location", rand_5*1000)
 		}		
 	}
 }
@@ -20,4 +20,4 @@ function jsonFlickrApi(o) {
 first = true
 url = "http://www.flickr.com/services/rest/?method=flickr.photos.search&format=json&api_key=739e578b0095d2ce5978331ac7466bd4&tags=iccp10,iccp2010&per_page=30"
 
-setInterval("checkFreshness();", 600000)
+setInterval("checkFreshness();", 100000)
