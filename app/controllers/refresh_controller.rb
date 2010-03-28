@@ -13,7 +13,7 @@ class RefreshController < ApplicationController
     {
       :src_s => p['url_s'],
       :src_m => p['url_m'],
-      :src_l => p['url_o'],
+      :src_l => p['url_m'],
       :title => p['title'],
       :url => 'http://www.flickr.com/photos/' + p['owner'] + '/' + p['id']
     }
