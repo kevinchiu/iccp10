@@ -12,8 +12,8 @@ function jsonFlickrApi(o) {
 	}else{
 		current = o.toSource()
 		if (current != baseline) {
-			rand_5 = Math.floor(Math.random()*6)
-			setTimeout("window.location=window.location", rand_5*10000)
+			rand_60 = Math.floor(Math.random()*61)
+			setTimeout("window.location=window.location", rand_60*1000)
 		}		
 	}
 }
