@@ -20,7 +20,7 @@ class RefreshController < ApplicationController
   end
   
   def photo_hash_array
-    flickr_search.shuffle.map{|p| photo_to_hash(p)}.to_json
+    flickr_search.map{|p| photo_to_hash(p)}.to_json
   end
   
   def flickr_search
