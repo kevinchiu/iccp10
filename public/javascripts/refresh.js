@@ -6,19 +6,16 @@ function checkFreshness () {
 }
 
 function jsonFlickrApi(o) {
+	current = o.photos.photo[photo.length-1].dateupload
 	if(first){
-		baseline = o.photos.photo[10].dateupload
+		baseline = current
 		first = false
 	}else{
-		current = o.photos.photo[10].dateupload
 		if (current != baseline) {
-			rand = Math.floor(Math.random()*10001)
-			setTimeout("window.location=window.location", rand)
+			window.location=window.location
 		}		
 	}
 }
 
 first = true
-
-
-setInterval("checkFreshness();", 20000)
+setInterval("checkFreshness();", Math.floor(Math.random()*10000)+5000)
