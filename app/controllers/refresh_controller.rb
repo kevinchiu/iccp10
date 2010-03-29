@@ -22,7 +22,7 @@ class RefreshController < ApplicationController
   end
   
   def photo_hash_array
-    flickr_search.sort_by{rand}.map{|p| photo_to_hash(p)}.to_json
+    flickr_search.map{|p| photo_to_hash(p)}.to_json
   end
   
   def flickr_search
@@ -32,6 +32,11 @@ class RefreshController < ApplicationController
     url = "http://www.flickr.com/services/rest/?method=flickr.people.getPublicPhotos&api_key=739e578b0095d2ce5978331ac7466bd4&user_id=48727269@N07&extras=url_o,url_s,url_m,url_l,date_upload"
     xml_data = Net::HTTP.get_response(URI.parse(url)).body
     data = XmlSimple.xml_in(xml_data)
-    data['photos'][0]['photo'].sort{|x,y| y["dateupload"].to_i <=> x["dateupload"].to_i}
+    results = data['photos'][0]['photo'].sort_by{rand}
+    top = results.max{|a,b| a["dateupload"].to_i <=> b["dateupload"].to_i}
+    #.sort{|x,y| y["dateupload"].to_i <=> x["dateupload"].to_i}
+    recent = results.index(top)
+    results[0], results[recent] = results[recent], results[0]
+    results
   end
 end
