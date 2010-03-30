@@ -6,7 +6,7 @@ function checkFreshness () {
 }
 
 function jsonFlickrApi(o) {
-	current = o.photos.photo[o.photos.photo.length-1].dateupload
+	current = o.photos.photo[0].dateupload
 	if(first){
 		baseline = current
 		first = false
