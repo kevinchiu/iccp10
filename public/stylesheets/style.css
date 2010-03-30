@@ -20,8 +20,9 @@ iframe {
 	clear:both;
 }
 #footer {
-	font: 100% "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+	font: 200% "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
 	color:#ccc;
 	background:#000;
 	text-align: center;
+	height:5%;
 }
