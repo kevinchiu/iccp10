@@ -33,7 +33,7 @@ class RefreshController < ApplicationController
     xml_data = Net::HTTP.get_response(URI.parse(url)).body
     data = XmlSimple.xml_in(xml_data)
     results = data['photos'][0]['photo'].sort_by{rand}
-    top = results.max{|a,b| a["dateupload"].to_i <=> b["dateupload"].to_i}
+    top = results.max{|a,b| b["dateupload"].to_i <=> a["dateupload"].to_i}
     #.sort{|x,y| y["dateupload"].to_i <=> x["dateupload"].to_i}
     recent = results.index(top)
     results[0], results[recent] = results[recent], results[0]
