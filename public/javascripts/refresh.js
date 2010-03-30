@@ -1,5 +1,5 @@
 function checkFreshness () {
-	url = "http://www.flickr.com/services/rest/?method=flickr.people.getPublicPhotos&api_key=739e578b0095d2ce5978331ac7466bd4&user_id=48727269@N07&format=json"
+	url = "http://www.flickr.com/services/rest/?method=flickr.people.getPublicPhotos&api_key=739e578b0095d2ce5978331ac7466bd4&user_id=48727269@N07&format=json&per_page=30&page=1"
 	results = new JSONscriptRequest(url)
 	results.buildScriptTag();
 	results.addScriptTag();
