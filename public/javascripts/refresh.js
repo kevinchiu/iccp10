@@ -12,7 +12,7 @@ function jsonFlickrApi(o) {
 		first = false
 	}else{
 		if (current != baseline) {
-			window.location=window.location
+			setTimeout("javascript:location.reload(true);", 100);
 		}
 	}
 }
