@@ -1,6 +1,5 @@
-//kevin_server = "http://iccp10.com/"
-//kevin_server = "http://iccp10.com/"
-kevin_server = "http://mlopen.com/"
+// kevin_server = "http://iccp10.com/"
+kevin_server = "http://localhost:3000/"
 var myslideshows = [],
 myslideshow = function(t, s) {
     var _ = this;
@@ -245,7 +244,7 @@ myslideshow = function(t, s) {
 
     // +'php/json.php?group='+_.u.group+'&page='+_.u.page+'&per_page='+_.u.per_page+'&set='+_.u.set+'&tags='+_.u.tags+'&user='+_.u.user+'&unique='+_.t.d;
 
-    j.src = _.t.c + 'refresh/get/' + '?id=' + _.t.d + '&per_page=' + _.u.per_page + '&tags=' + _.u.tags + '&user=' + _.u.user; (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(j);
+    j.src = _.t.c + 'refresh/get/' + '?id=' + '1' + '&per_page=' + _.u.per_page + '&tags=' + _.u.tags + '&user=' + _.u.user; (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(j);
     _.t.q['json'] = setInterval(function() {
         _.e();
     },
