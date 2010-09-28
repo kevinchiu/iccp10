@@ -1,0 +1,134 @@
+# Logfile created on Mon Mar 29 20:13:08 -0400 2010DEPRECATION WARNING: require "active_support/core_ext/blank" is deprecated and will be removed in Rails 3. Use require "active_support/core_ext/object/blank" instead.. (called from /Users/kevin/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/blank.rb:2)
+DEPRECATION WARNING: require "active_support/core_ext/blank" is deprecated and will be removed in Rails 3. Use require "active_support/core_ext/object/blank" instead.. (called from /Users/kevin/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/blank.rb:2)
+DEPRECATION WARNING: require "active_support/core_ext/blank" is deprecated and will be removed in Rails 3. Use require "active_support/core_ext/object/blank" instead.. (called from /Users/kevin/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/blank.rb:2)
+
+
+Processing ApplicationController#get (for 127.0.0.1 at 2010-03-30 17:54:52) [GET]
+  Parameters: {"id"=>"1", "tags"=>"iccp10,iccp2010", "per_page"=>"30", "user"=>""}
+
+SyntaxError (/Users/kevin/Sites/iccp10/app/controllers/refresh_controller.rb:6: syntax error, unexpected '{', expecting kTHEN or ':' or '\n' or ';'
+/Users/kevin/Sites/iccp10/app/controllers/refresh_controller.rb:8: syntax error, unexpected '}', expecting kEND
+    } else {
+     ^
+/Users/kevin/Sites/iccp10/app/controllers/refresh_controller.rb:9: odd number list for Hash):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (33.2ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#get (for 127.0.0.1 at 2010-03-31 11:01:55) [GET]
+  Parameters: {"id"=>"1", "tags"=>"iccp10,iccp2010", "per_page"=>"30", "user"=>""}
+
+SyntaxError (/Users/kevin/Sites/iccp10/app/controllers/refresh_controller.rb:6: syntax error, unexpected '{', expecting kTHEN or ':' or '\n' or ';'
+/Users/kevin/Sites/iccp10/app/controllers/refresh_controller.rb:8: syntax error, unexpected '}', expecting kEND
+    } else {
+     ^
+/Users/kevin/Sites/iccp10/app/controllers/refresh_controller.rb:9: odd number list for Hash):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (32.0ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+DEPRECATION WARNING: require "active_support/core_ext/blank" is deprecated and will be removed in Rails 3. Use require "active_support/core_ext/object/blank" instead.. (called from /Users/kevin/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/blank.rb:2)
+
+
+Processing ApplicationController#get (for 127.0.0.1 at 2010-03-31 14:04:34) [GET]
+  Parameters: {"id"=>"1", "tags"=>"iccp10,iccp2010", "per_page"=>"30", "user"=>""}
+
+SyntaxError (/Users/kevin/Sites/iccp10/app/controllers/refresh_controller.rb:6: syntax error, unexpected '{', expecting kTHEN or ':' or '\n' or ';'
+/Users/kevin/Sites/iccp10/app/controllers/refresh_controller.rb:8: syntax error, unexpected '}', expecting kEND
+    } else {
+     ^
+/Users/kevin/Sites/iccp10/app/controllers/refresh_controller.rb:9: odd number list for Hash):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (33.8ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+DEPRECATION WARNING: require "active_support/core_ext/blank" is deprecated and will be removed in Rails 3. Use require "active_support/core_ext/object/blank" instead.. (called from /Users/kevin/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/blank.rb:2)
+DEPRECATION WARNING: require "active_support/core_ext/blank" is deprecated and will be removed in Rails 3. Use require "active_support/core_ext/object/blank" instead.. (called from /Users/kevin/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/blank.rb:2)
+DEPRECATION WARNING: require "active_support/core_ext/blank" is deprecated and will be removed in Rails 3. Use require "active_support/core_ext/object/blank" instead.. (called from /Users/kevin/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/blank.rb:2)
+
+
+Processing ApplicationController#get (for 127.0.0.1 at 2010-05-24 06:50:22) [GET]
+  Parameters: {"id"=>"320192437619", "tags"=>"iccp10,iccp2010", "per_page"=>"30", "user"=>""}
+
+SyntaxError (/Users/kevin/Sites/iccp10/app/controllers/refresh_controller.rb:6: syntax error, unexpected '{', expecting kTHEN or ':' or '\n' or ';'
+/Users/kevin/Sites/iccp10/app/controllers/refresh_controller.rb:8: syntax error, unexpected '}', expecting kEND
+    } else {
+     ^
+/Users/kevin/Sites/iccp10/app/controllers/refresh_controller.rb:9: odd number list for Hash):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (155.9ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#get (for 127.0.0.1 at 2010-05-24 06:50:26) [GET]
+  Parameters: {"id"=>"197827417403", "tags"=>"iccp10,iccp2010", "per_page"=>"30", "user"=>""}
+
+SyntaxError (/Users/kevin/Sites/iccp10/app/controllers/refresh_controller.rb:6: syntax error, unexpected '{', expecting kTHEN or ':' or '\n' or ';'
+/Users/kevin/Sites/iccp10/app/controllers/refresh_controller.rb:8: syntax error, unexpected '}', expecting kEND
+    } else {
+     ^
+/Users/kevin/Sites/iccp10/app/controllers/refresh_controller.rb:9: odd number list for Hash):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (36.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+DEPRECATION WARNING: require "active_support/core_ext/blank" is deprecated and will be removed in Rails 3. Use require "active_support/core_ext/object/blank" instead.. (called from /Users/kevin/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/blank.rb:2)
+DEPRECATION WARNING: require "active_support/core_ext/blank" is deprecated and will be removed in Rails 3. Use require "active_support/core_ext/object/blank" instead.. (called from /Users/kevin/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/blank.rb:2)
+
+
+Processing RefreshController#get (for 127.0.0.1 at 2010-05-24 06:53:32) [GET]
+  Parameters: {"id"=>"848549146205", "tags"=>"iccp10,iccp2010", "per_page"=>"30", "user"=>""}
+Completed in 975ms (View: 1, DB: 0) | 200 OK [http://localhost/refresh/get/?id=848549146205&per_page=30&tags=iccp10,iccp2010&user=]
